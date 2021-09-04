@@ -183,6 +183,10 @@ body {
   .userName {
     background-position: center;
   }
+
+  .userName h1{
+    font-size: 5rem;
+  }
 }
 @media (max-width: 550px) {
   html {
