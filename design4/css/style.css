@@ -3,6 +3,11 @@
   src: url("https://giantsmeet.s3.ap-south-1.amazonaws.com/1630758530818e5735cd0986e1738625083566248f41a.otf");
 }
 
+
+html{
+  overflow-x: hidden!important;
+}
+
 * {
   margin: 0;
   padding: 0;
