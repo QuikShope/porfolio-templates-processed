@@ -99,7 +99,8 @@ body {
 .aboutMe {
   max-height: 120vh;
   padding: 2rem 6rem 2rem 4rem;
-  color: #b4afaf;
+  color: #000000;
+  text-align: justify;
 }
 
 .aboutMe h1,
@@ -125,7 +126,7 @@ body {
   background-color: rgba(0, 0, 0, 0.219);
   font-weight: bold;
   color: white;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.109);
   font-size: 1.2rem;
   transition: all 0.3s ease-in-out;
   font-family: "Poppins", sans-serif;
