@@ -1,0 +1,31 @@
+.watermark{
+    cursor: pointer;
+    position: fixed;
+    /* width: 300px; */
+    background-color: transparent;
+    height: 50px;
+    z-index: 1000;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.watermark img{
+    border-radius: 10px 0px 0px 0px;
+
+}
+
+@media screen and (max-width: 544px) {
+    .watermark{
+        background-color: white;
+        height: auto;
+        width: 100%;
+    }
+
+    .watermark img{
+        border-radius: 0px 0px 0px 0px;
+      }
+}
