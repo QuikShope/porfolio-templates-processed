@@ -8,7 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./design1_style.css">
+    <link rel="stylesheet" href="./css/project_modal.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/style-new.css">
+    <link rel="stylesheet" href="./css/watermark.css">
     <title>Portfolio</title>
 </head>
 
@@ -74,35 +77,7 @@
                             <h1>The Shop App</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Reiciendis sint eligendi </p>
-                            <button class="open-modal">SEE DETAILS</button>
-                            <div class="project-modal hidden">
-
-                                <div class="modal-content">
-                                    <div class="close-modal">&times;</div>
-                                    <div class="modal-gallery">
-                                        <div class="featured">
-                                            <img id="featured" src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg" alt="">
-                                        </div>
-                                        <div id="slide-wrapper">
-                                            <div id="slider">
-                                                <img class="thumbnail active" src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg" alt="">
-                                                <img class="thumbnail" src="http://farm4.static.flickr.com/3563/3486756814_08ebc50268_z.jpg" alt="">
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-details">
-                                        <p>Description go here.</p>
-                                        <div class="skills">
-                                            <h1>Skills Used</h1>
-                                            <div class="skill-items">
-                                                <div class="skill-item">HTML</div>
-                                                <div class="skill-item">Javascript</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <button class="open-modal" onclick="openModal(1)">SEE DETAILS</button>
                         </div>
                     </div>
                     <!-- <div class="project-card">
@@ -155,13 +130,50 @@
 
     </footer>
 
+    <div class="project-modal hidden" id="project_1">
+        <div class="modal-content">
+            <div class="close-modal" onclick="closeModal(1)">&times;</div>
+            <div class="modal-gallery">
+                <div class="featured">
+                    <img id="featured_1" src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg" alt="">
+                </div>
+                <div id="slide-wrapper">
+                    <div id="slider">
+
+
+                        <img class="thumbnail active" id="thumbnail_1_1" src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg" onclick='selectThumbnail(1,1,1,2)' alt="">
+
+
+                        <img class="thumbnail" id="thumbnail_1_2" src="http://farm4.static.flickr.com/3563/3486756814_08ebc50268_z.jpg" onclick='selectThumbnail(1,2,1,2)' alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-details">
+                <p>Description go here.</p>
+                <div class="skills">
+                    <h1>Skills Used</h1>
+                    <div class="skill-items">
+                        <div class="skill-item">HTML</div>
+                        <div class="skill-item">Javascript</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <div class="watermark" onclick='window.location="https://giantsmeet.com/"'>
         <img src="https://giantsmeet.s3.ap-south-1.amazonaws.com/1630708891064403b5a46cebf4d9af58cd3c2613150a1.png">
     </div>
 
-    <script>
-        const navSlide=()=>{const e=document.querySelector(".burger"),t=document.querySelector(".main-nav-list"),a=document.querySelectorAll("main-nav-link");e.addEventListener("click",()=>{t.classList.toggle("nav-active")}),a.forEach((e,t)=>{e.style.animation=`navLinkFade 0.5s ease forwards ${t/7+1}s`})};navSlide();let thumbnails=document.getElementsByClassName("thumbnail"),activeImages=document.getElementsByClassName("active");for(var i=0;i<thumbnails.length;i++)thumbnails[i].addEventListener("click",function(){activeImages.length>0&&activeImages[0].classList.remove("active"),this.classList.add("active"),document.getElementById("featured").src=this.src});let modal=document.querySelector(".project-modal"),openModal=document.querySelectorAll(".open-modal"),closeModal=document.querySelector(".close-modal");for(i=0;i<openModal.length;i++)openModal[i].addEventListener("click",()=>{modal.classList.toggle("hidden")});closeModal.addEventListener("click",()=>{modal.classList.toggle("hidden")});const sections=document.querySelectorAll("section"),navLi=document.querySelectorAll(".main-nav-link");window.addEventListener("scroll",()=>{let e="";sections.forEach(t=>{const a=t.offsetTop,l=t.clientHeight;pageYOffset>=a-l/3&&(e=t.getAttribute("id"))}),navLi.forEach(t=>{t.classList.remove("btn-cta"),t.classList.contains(e)&&t.classList.add("btn-cta")})});
-    </script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/scroll-hglt.js"></script>
+    <script type="text/javascript" src="./js/project_modal.js"></script>
+
+   
 </body>
 
 </html>

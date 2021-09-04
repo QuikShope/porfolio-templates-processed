@@ -1,61 +1,11 @@
-/*
---- 01 TYPOGRAPHY SYSTEM
+*, *:focus, *:hover {
+    outline: none;
+}
 
-- Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-- Font weights
-Default: 400
-Medium: 500
-Semi-bold: 600
-Bold: 700
-
-- Line heights
-Default: 1
-Small: 1.05
-Medium: 1.2
-Paragraph default: 1.6
-Large: 1.8
-
-- Letter spacing
--0.5px
-0.75px
-
---- 02 COLORS
-
-- Primary: #0088f7
-- Tints:
-#b7dfff
-#80c4fb
-#4dacf9
-- Shades: 
-#006dc6
-#003663
-
-- Accents:
-- Greys
-
-#888
-#767676 (lightest grey allowed on #fff)
-#6f6f6f (lightest grey allowed on #fdf2e9)
-#555
-#333
-
---- 05 SHADOWS
-
-0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-
---- 06 BORDER-RADIUS
-
-Default: 9px
-Medium: 11px
-
---- 07 WHITESPACE
-
-- Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-*/
-
+select {
+    border: 0px none;
+    border-radius: 0.001px; /* this value must be greater than 0, otherwise it won't work */
+}
 * {
   margin: 0;
   padding: 0;
@@ -80,7 +30,7 @@ body {
   /* background-color: #171717; */
   background: no-repeat center center fixed;
   background-size: cover;
-  background-image: url("./bg-imgs/bg2.png"),
+  background-image: url("https://giantsmeet.s3.ap-south-1.amazonaws.com/1630754433069fadd79d4e5e3674491ae89dac1c9a6c8.jpg"),
     linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
   background-blend-mode: overlay;
 }
@@ -512,7 +462,7 @@ input {
   border-radius: 0.3vw;
   font-family: "Rubik";
   font-weight: 400;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   color: #ffffffb3;
 }
 
@@ -526,7 +476,7 @@ textarea {
   padding: 1rem;
   font-size: 0.85vw;
   font-family: "Rubik";
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   color: white;
 }
 ::placeholder {
@@ -557,9 +507,10 @@ footer {
 .footer-content p {
   color: #ffffff;
   font-family: "Poppins";
-  font-size: 1.4vw;
+  font-size: 1.5rem;
   font-weight: 500;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
+  text-align: center;
 }
 .logo img {
   height: 8rem;
@@ -583,8 +534,4 @@ footer {
 .footer-list ul li a:active {
   color: #fff;
 }
-.footer-content p:last-child {
-  font-size: 1vw;
-  text-align: center;
-  font-weight: 400;
-}
+

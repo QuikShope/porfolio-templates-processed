@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/************************************** MODAL **************************/
+
+.project-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 90%;
+  height: auto;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  /* padding: 2rem; */
+  padding-top: 7.2rem;
+  position: relative;
+  border-radius: 1rem;
+  margin: auto;
+}
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 4rem;
+  color: #000000;
+
+  background-color: transparent;
+  font-size: 4.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 1rem;
+  border: transparent solid 2px;
+  transition: all 0.4s;
+}
+.close-modal:hover {
+  color: #ec1c24;
+  transform: scale(1.1);
+}
+.modal-gallery {
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+}
+.featured {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.featured img {
+  object-fit: cover;
+  height: 50vh;
+  max-width: 100%;
+}
+#slide-wrapper {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#slider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thumbnail {
+  object-fit: cover;
+  max-width: 6vw;
+  max-height: 6vw;
+  cursor: pointer;
+  opacity: 0.7;
+  margin: 0 5px;
+  transition: all 0.3s;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 0.5px 0.25px grey;
+}
+
+.active {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.modal-details {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: space-between;
+}
+.modal-details p {
+  font-size: 2rem;
+  line-height: 1.4;
+  padding: 1.4rem;
+  color: #000;
+  /* letter-spacing: 3px; */
+  font-weight: 600;
+  font-family: "Poppins";
+}
+.modal-details .skills {
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.modal-details  .skills h1 {
+  color: #000;
+  font-weight: 700;
+  font-family: "Poppins";
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+.modal-details .skill-items {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1.6vw;
+  color: black;
+}
+.modal-details .skill-item {
+  padding: 0.7vw 2vw;
+  font-size: 1.1vw;
+  font-weight: 700;
+  /*letter-spacing: 2px;*/
+  line-height: 1.1;
+  text-align: center;
+  border-radius: 1.3vw;
+  font-family: "Poppins";
+  background-color: #ececec;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .modal-content {
+    width: 90%;
+    height: auto;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    /* padding: 2rem; */
+    padding-top: 7.2rem;
+    position: relative;
+    border-radius: 1rem;
+    margin: auto;
+  }
+
+  .modal-gallery {
+    height: 100%;
+
+    gap: 3rem;
+  }
+  .featured {
+    width: 100%;
+    height: 100%;
+  }
+  .featured img {
+    height: 32vh;
+  }
+
+  .thumbnail {
+    max-width: 10vw;
+    max-height: 10vw;
+    margin: 0 7px;
+    border-radius: 0.7rem;
+  }
+
+  .modal-details {
+    height: 100%;
+    grid-template-rows: auto auto;
+  }
+
+  .modal-details p {
+    font-size: 1.5rem;
+  }
+
+  .modal-details .skills h1 {
+    font-size: 4vw;
+    margin-bottom: 2rem;
+  }
+  .modal-details .skill-items {
+    gap: 2vw;
+  }
+  .modal-details .skill-item {
+    padding: 1.2vw 3.2vw;
+    font-size: 1.8vw;
+    border-radius: 1.8vw;
+  }
+}
+
+
+@media screen and (max-width: 544px) {
+    .modal-content {
+    width: 90%;
+    height: auto;
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+    padding-bottom: 4.8rem;
+  }
+  .close-modal {
+    position: absolute;
+    top: 0.4rem;
+    right: 1.7rem;
+    font-size: 3.6rem;
+  }
+
+  .modal-gallery {
+    height: 100%;
+    gap: 0rem;
+  }
+  .featured {
+    width: 100%;
+    height: 100%;
+  }
+  .featured img {
+    height: 25vh;
+    max-width: 90%;
+    object-fit: cover;
+  }
+
+  .thumbnail {
+    max-width: 9.6vw;
+    max-height: 9.6vw;
+    margin: 0 5px;
+    border-radius: 0.5vw;
+
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.603);
+  }
+
+  .modal-details {
+    height: 100%;
+    grid-template-rows: auto auto;
+  }
+
+  .modal-details p {
+    font-size: 1.5rem;
+    color: #000;
+    padding: 0;
+  }
+  .modal-details .skills {
+    padding: 0rem;
+  }
+
+  .modal-details .skills h1 {
+    font-size: 2.4vh;
+    margin-bottom: 1.2rem;
+    color: #000;
+  }
+  .modal-details .skill-items {
+    gap: 1.2vh;
+    color: #000;
+  }
+  .modal-details .skill-item {
+    padding: 1.6vw 3.2vw;
+    font-size: 2.4vw;
+    border-radius: 2.4vw;
+    color: #000;
+  }
+}

@@ -13,8 +13,10 @@
 
 
     <script src="https://kit.fontawesome.com/c06afd5824.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/watermark.css">
+    <link rel="stylesheet" href="./css/project_modal.css">
     <title>Portfolio</title>
 </head>
 
@@ -23,10 +25,10 @@
         <header>
             <nav>
                 <ul class="main-nav-list">
-                    <li><a class="main-nav-link home btn-cta" href="#home">home</a></li>
-                    <li><a class="main-nav-link about" href="#about">about</a></li>
-                    <li><a class="main-nav-link projects" href="#works">projects</a></li>
-                    <li><a class="main-nav-link contact" href="#contact">contact</a></li>
+                    <li><a class="main-nav-link home btn-cta" href="#home">Home</a></li>
+                    <li><a class="main-nav-link about" href="#about">About</a></li>
+                    <li><a class="main-nav-link projects" href="#works">Projects</a></li>
+                    <li><a class="main-nav-link contact" href="#contact">Contact</a></li>
 
                 </ul>
                 <div class="burger">
@@ -38,7 +40,7 @@
         <div class="hero-content">
             <div class="userpic">
                 <div class="userpic-img">
-                    <img src="img/userpic.png" alt="">
+                    <img src="https://www.drupal.org/files/docs/user_guide/en/images/coverimage.png" alt="">
                     <div class="shifted-border">
 
                     </div>
@@ -63,7 +65,7 @@
             ipsum doloribus obcaecati.</p>
         <div class="skill--cv">
             <div class="skills">
-                <h1>Skills</h1>
+                <h1 style="color : white!important">Skills</h1>
                 <ul>
                     <li>Skill 1</li>
                     <li>Skill 2</li>
@@ -79,9 +81,9 @@
     <section id="works" class="section-works">
         <h1 class="heading-primary">MY <span style="color: #00ffff;">WORK</span></h1>
         <div class="works">
-            <div class="work">
+            <div class="work" onclick="openModal(1)">
                 <button>
-                    <img src="img/works/work1.png" alt="">
+                    <img src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg" alt="">
                     <div class="img-overlay">
                         01
                     </div>
@@ -91,39 +93,7 @@
 
                 </div>
             </div>
-            <div class="work">
-                <button>
-                    <img src="img/works/work2.png" alt="">
-                    <div class="img-overlay">
-                        02
-                    </div>
-                </button>
-                <div class="shifted-border">
 
-                </div>
-            </div>
-            <div class="work">
-                <button>
-                    <img src="img/works/work3.png" alt="">
-                    <div class="img-overlay">
-                        03
-                    </div>
-                </button>
-                <div class="shifted-border">
-
-                </div>
-            </div>
-            <div class="work">
-                <button>
-                    <img src="img/works/work4.png" alt="">
-                    <div class="img-overlay">
-                        04
-                    </div>
-                </button>
-                <div class="shifted-border">
-
-                </div>
-            </div>
         </div>
 
     </section>
@@ -151,26 +121,57 @@
     </section>
     <footer>
         <div class="footer-content">
-            <p>made with</p>
-            <div class="logo">
-                <img src="img/logo.png" alt="">
-            </div>
-            <div class="footer-list">
-                <ul>
-                    <li><a href="">VISIT</a></li>
-                    <li><a href="">FAQs</a></li>
-                    <li><a href="">CONTACT US</a></li>
-                    <li><a href="">MORE</a></li>
-                </ul>
-            </div>
-            <p>All information is provided by the user. we are not
-                responsible for any
-                misleading or
-                wrong
-                information</p>
+
+            <p>All information is provided by the user. <a href="https://giantsmeet.com/" style="color: wheat;font-style: italic;">GiantsMeet</a> is not responsible for any misleading or wrong information</p>
         </div>
     </footer>
-    <script src="js/script.js"></script>
+
+
+
+
+    <div class="project-modal hidden" id="project_1">
+        <div class="modal-content">
+            <div class="close-modal" onclick="closeModal(1)">&times;</div>
+            <div class="modal-gallery">
+                <div class="featured">
+                    <img id="featured_1" src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg" alt="">
+                </div>
+                <div id="slide-wrapper">
+                    <div id="slider">
+
+
+                        <img class="thumbnail active" id="thumbnail_1_1" src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg" onclick='selectThumbnail(1,1,1,2)' alt="">
+
+
+                        <img class="thumbnail" id="thumbnail_1_2" src="http://farm4.static.flickr.com/3563/3486756814_08ebc50268_z.jpg" onclick='selectThumbnail(1,2,1,2)' alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-details">
+                <p>Description go here.</p>
+                <div class="skills">
+                    <h1>Skills Used</h1>
+                    <div class="skill-items">
+                        <div class="skill-item">HTML</div>
+                        <div class="skill-item">Javascript</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="watermark" onclick='window.location="https://giantsmeet.com/"'>
+        <img src="https://giantsmeet.s3.ap-south-1.amazonaws.com/1630708891064403b5a46cebf4d9af58cd3c2613150a1.png">
+    </div>
+
+
+
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/project_modal.js"></script>
 </body>
 
 </html>
