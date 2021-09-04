@@ -56,6 +56,13 @@ body{
 body {
   overflow-x: hidden;
 }
+.userNameOuter{
+  width: 100%;
+  height: 100%;
+  background: url("https://giantsmeet.s3.ap-south-1.amazonaws.com/16307635750949308936d9f70b2acf12dba30c422bb68.png");
+  background-position: center;
+}
+
 .userName {
   display: flex;
   align-items: center;
@@ -63,11 +70,13 @@ body {
   flex-direction: column;
   height: 100vh;
   position: relative;
-  background: url("https://giantsmeet.s3.ap-south-1.amazonaws.com/1630758482889c7cb50b191aa182c41c05e1a5d6891e9.png");
   color: white;
+  background-color: black;
+  opacity: 0.58;
 }
 
 .userName h1 {
+  color: white;
   font-size: 8rem;
   font-family: "Quentin";
   text-align: center;
