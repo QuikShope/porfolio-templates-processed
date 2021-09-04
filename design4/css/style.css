@@ -73,6 +73,14 @@ body {
   text-align: center;
 }
 
+.profession{
+  word-spacing: 1.2px;
+  letter-spacing: 7px;
+  text-align: center;
+  color: white;
+  opacity: .75;
+}
+
 /* Button box */
 .buttonBox button {
   border-radius: 2rem;
@@ -186,6 +194,10 @@ body {
 
   .userName h1{
     font-size: 5rem;
+  }
+
+  .profession{
+    letter-spacing: 5.5px;
   }
 }
 @media (max-width: 550px) {
