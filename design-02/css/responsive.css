@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 544px) {
+  /******************************************* ** */
+  /************* REUSABLE COMPONENTS ***********/
+  /******************************************* ** */
+  .burger {
+    margin-right: 0rem;
+  }
+  .fa-bars {
+    font-size: 4vh;
+    margin-right: 0.5vw;
+  }
+  .fa-times {
+    font-size: 4vh;
+    margin-right: 0.5vw;
+  }
+
+  .btn {
+    font-size: 4vw;
+    letter-spacing: 0.7vw;
+    padding: 2.4vw 4.8vw;
+    border-radius: 1.6vw;
+  }
+  .btn:hover {
+    background-color: #ce0101;
+  }
+  .btn-primary {
+    width: 100%;
+    height: 100%;
+    font-size: 6vw;
+    padding: 4.2vw 7vw;
+  }
+  .heading-primary {
+    font-size: 7.2vw;
+    letter-spacing: 0.7vw;
+    line-height: 1.4;
+    /* border: solid 1px red; */
+    margin-bottom: 2vh;
+  }
+
+  section {
+    margin-bottom: 1vw;
+  }
+
+  /******************************************* ** */
+  /************* HERO SECTION ***********/
+  /******************************************* ** */
+
+  header {
+    height: 7vh;
+  }
+
+  nav {
+    padding: 1.5vh;
+  }
+
+  .main-nav-list {
+    height: calc(100vh - 7vh);
+    top: 6.95vh;
+    width: 50%;
+  }
+
+  .main-nav-link:visited,
+  .main-nav-link:link {
+    font-size: 1.8vh;
+    letter-spacing: 3px;
+    margin: 3.2vh;
+    padding: 0.7vh 1.4vh;
+  }
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+  .text-content {
+    /* border: solid 1px red; */
+    justify-content: flex-start;
+    padding: 3vh 6vh;
+    align-items: flex-start;
+    line-height: 1.3;
+  }
+
+  .text-content h1:nth-child(1) {
+    font-size: 2.8vh;
+    letter-spacing: 0.6vw;
+  }
+  .text-content h1:nth-child(2) {
+    font-size: 3.6vh;
+    letter-spacing: 0.7vw;
+    text-align: justify;
+  }
+  .text-content h1:nth-child(3) {
+    font-size: 3.2vh;
+    letter-spacing: 0.5vw;
+    margin-bottom: 4vw;
+  }
+
+  .userpic {
+    /* border: solid 1px red; */
+    justify-content: center;
+    align-items: flex-end;
+    padding: 2vh 6.2vh;
+  }
+
+  .userpic-img {
+    height: 70vw;
+    width: 70vw;
+    object-fit: cover;
+    /* border: solid 1px red; */
+  }
+
+  .userpic-img .shifted-border {
+    border: solid 0.9vw #00ffff;
+    top: 3.6vw;
+    left: 3.6vw;
+  }
+
+  /******************************************* ** */
+  /************* ABOUT SECTION ***********/
+  /******************************************* ** */
+
+  .section-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    padding: 4vw 8vw;
+  }
+
+  .section-about p {
+    font-size: 3.6vw;
+    line-height: 1.4;
+    letter-spacing: 0.4vw;
+    margin-bottom: 5vw;
+    padding: 1vw;
+    /* border: solid 1px red; */
+  }
+
+  .skill--cv {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    /* border: solid 1px red; */
+  }
+  .skills {
+    align-items: flex-start;
+  }
+  .skills h1 {
+    font-size: 8.2vw;
+    letter-spacing: 0.7vw;
+    line-height: 1.2;
+    margin-bottom: 3.2vw;
+  }
+
+  .skills ul {
+    font-size: 4.8vw;
+    letter-spacing: 0.4vw;
+    gap: 0.7vw;
+    margin-bottom: 2.4vh;
+  }
+  .cv {
+    padding: 0vw;
+  }
+
+  /******************************************* ** */
+  /************* WORKS SECTION ***********/
+  /******************************************* ** */
+  .section-works {
+    gap: 4.2vw;
+    padding: 4vw 8vw;
+  }
+  .works {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 8vw;
+    padding: 1vw 0vw;
+  }
+  .work {
+    width: 100%;
+    height: 50vw;
+  }
+  .work img {
+    width: 95%;
+    height: 45vw;
+  }
+  .work .shifted-border {
+    width: 95%;
+    height: 45vw;
+    border: solid 0.9vw #00ffff;
+    top: 3.6vw;
+    left: 3.6vw;
+  }
+  .img-overlay {
+    width: 95%;
+    height: 45vw;
+    padding: 0 2.4vw;
+    font-size: 16vw;
+  }
+
+  /******************************************* ** */
+  /************* CONTACT SECTION ***********/
+  /******************************************* ** */
+
+  .section-contact {
+    min-height: 80vh;
+    gap: 4.2vw;
+    padding: 2vw 8vw;
+  }
+  .input-field {
+    margin-bottom: 6vw;
+
+    gap: 0.8vw;
+  }
+  label {
+    font-size: 5vw;
+    letter-spacing: 4px;
+    margin-bottom: 1.2vw;
+  }
+  input {
+    width: 88vw;
+    height: 11vw;
+    padding: 2vw;
+    font-size: 3.2vw;
+    color: #ffffffb3;
+    border-radius: 0.8vw;
+    letter-spacing: 2px;
+  }
+
+  textarea {
+    width: 88vw;
+    height: 50vw;
+    color: #ffffffb3;
+    border-radius: 0.8vw;
+    padding: 2vw;
+    font-size: 3.2vw;
+    letter-spacing: 2px;
+  }
+
+  ::placeholder {
+    font-size: 3.2vw;
+  }
+
+  /******************************************* ** */
+  /************* FOOTER ***********/
+  /******************************************* ** */
+
+  .footer-content {
+    gap: 2.4vw;
+    padding: 3.2vw 7vw;
+  }
+  .footer-content p {
+    font-size: 3.2vw;
+    letter-spacing: 2.5px;
+  }
+  .logo img {
+    height: 15vw;
+  }
+  .footer-list ul {
+    gap: 4vw;
+  }
+  .footer-list ul li a:visited,
+  .footer-list ul li a:link {
+    font-size: 3vw;
+    letter-spacing: 0.5vw;
+  }
+  .footer-content p:last-child {
+    font-size: 2vw;
+    text-align: center;
+    font-weight: 400;
+  }
+}

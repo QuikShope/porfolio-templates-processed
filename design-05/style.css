@@ -1,0 +1,209 @@
+/* Utility Class */
+html {
+  scroll-behavior: smooth;
+}
+.size {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  font-family: "Open Sans", sans-serif;
+}
+.big {
+  font-size: 3rem;
+  display: block;
+  height: 2.5rem;
+  text-align: center;
+}
+.section {
+  width: 71%;
+  margin: 0;
+}
+body {
+  overflow-x: hidden;
+}
+/* Navbar */
+
+.navbar {
+  display: none;
+  background-image: linear-gradient(#110000, #370000, #110000);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.sideMenu {
+  /* border: 1px solid black; */
+  width: 30%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sideMenu a {
+  font-family: "Poppins", sans-serif;
+}
+.topColor {
+  background-image: linear-gradient(#110000, #370000, #110000);
+}
+.bottomColor {
+  color: white;
+}
+
+.topColor a {
+  color: white;
+  opacity: 50%;
+}
+.topColor a:hover {
+  opacity: 1;
+  color: white;
+}
+.bottomColor a {
+  color: #9e9e9e;
+}
+.bottomColor a:hover {
+  color: black;
+}
+.high a {
+  color: black;
+}
+.sideMenu .active {
+  opacity: 1;
+}
+/* User Information */
+
+.user {
+  display: flex;
+  background-image: linear-gradient(#110000, #370000, #110000);
+  color: white;
+}
+.user h3,
+.user h5 {
+  font-family: "Poppins", sans-serif;
+}
+.userInfo {
+  /* border: 1px solid blue; */
+  width: 25%;
+  margin: 0;
+  height: 100vh;
+  /* display: inline-block; */
+}
+.userImage {
+  /* display: inline-block; */
+  width: 60%;
+  /* border: 2px solid blueviolet; */
+}
+
+/* About Me */
+.aboutMe {
+  max-height: 120vh;
+  padding: 2rem 6rem 2rem 4rem;
+  color: #b4afaf;
+}
+
+.aboutMe h1,
+.contact h1 {
+  font-size: 4rem;
+  border-bottom: 4px solid #aca26f;
+  color: #aca26f;
+  border-radius: 3px;
+  padding: 1.2rem 0;
+  font-family: "Prata", serif;
+}
+
+/* Image Section */
+.caption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.219);
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+  font-family: "Poppins", sans-serif;
+}
+.col {
+  transition: all 0.3s ease-in-out;
+}
+.col img {
+  transition: all 0.3s ease-in-out;
+}
+.col :hover,
+.col:hover img {
+  transform: scale(1.05);
+}
+.col:hover .caption {
+  display: flex;
+}
+
+/* Form */
+.submission {
+  min-height: 400px;
+}
+.submission input {
+  font-style: italic;
+  font-family: "Open Sans", sans-serif;
+}
+/* Footer */
+.footer {
+  position: absolute;
+  /* bottom: 0; */
+  left: 0;
+  width: 100vw;
+  font-size: 0.8rem;
+  font-family: "Rubik", sans-serif;
+}
+.box {
+  /* border: 1px solid white; */
+  width: 15rem;
+  margin: 0.5rem auto;
+}
+.box img {
+  max-width: 100%;
+}
+@media (max-width: 1000px) {
+  html {
+    font-size: 14px;
+  }
+  .navbar {
+    display: block;
+  }
+  .sideMenu {
+    display: none !important;
+  }
+  .section {
+    width: 100%;
+  }
+  .user {
+    flex-direction: column;
+    margin-top: 3.5rem;
+  }
+  .userInfo {
+    width: 100%;
+    height: auto;
+    order: 2;
+    margin: auto;
+  }
+
+  .aboutMe {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 13px;
+  }
+  .aboutMe h1,
+  .contact h1 {
+    font-size: 2.7rem;
+  }
+}

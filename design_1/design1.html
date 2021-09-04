@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./design1_style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="main-nav-list">
+                <li><a class="main-nav-link home btn-cta" href="#home">Home</a></li>
+                <li><a class="main-nav-link about" href="#about">About Me</a></li>
+                <li><a class="main-nav-link projects" href="#projects">Projects</a></li>
+                <li><a class="main-nav-link contact" href="#contact">Contact Us</a></li>
+
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="home section-primary">
+                <img src="https://www.pngarts.com/files/11/Avatar-PNG-Picture.png" alt="">
+                <h1>I am Adnan Khurshid</h1>
+                <div class="home-text">
+                    <p>Senior Developer At Microsoft</p>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="about section-primary">
+                <h1 class="primary-heading">About Me</h1>
+                <div class="intro-long">
+                    <p>Lorem ipsum dolor sit amet consectetumque in tempore! Voluptas
+                        alias fuga iste odit itaque doloremque sit enim. Qui, ipsa quaerat! Quasi earum ut vero atque
+                    </p>
+                    <div class="five-skills">
+                        <h1>Top Skills</h1>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Bootstrap</li>
+                            <li>React JS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button>SEE MORE</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projects">
+            <div class="projects section-primary">
+                <h1 class="primary-heading">Projects</h1>
+                <div class="project-cards">
+                    <div class="project-card">
+                        <img src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg" alt="">
+                        <div class="project-details">
+                            <h1>The Shop App</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Reiciendis sint eligendi </p>
+                            <button class="open-modal">SEE DETAILS</button>
+                            <div class="project-modal hidden">
+
+                                <div class="modal-content">
+                                    <div class="close-modal">&times;</div>
+                                    <div class="modal-gallery">
+                                        <div class="featured">
+                                            <img id="featured" src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg" alt="">
+                                        </div>
+                                        <div id="slide-wrapper">
+                                            <div id="slider">
+                                                <img class="thumbnail active" src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg" alt="">
+                                                <img class="thumbnail" src="http://farm4.static.flickr.com/3563/3486756814_08ebc50268_z.jpg" alt="">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-details">
+                                        <p>Description go here.</p>
+                                        <div class="skills">
+                                            <h1>Skills Used</h1>
+                                            <div class="skill-items">
+                                                <div class="skill-item">HTML</div>
+                                                <div class="skill-item">Javascript</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="project-card">
+                        <img src="img/project.png" alt="">
+                        <div class="project-details">
+                            <h1>The Shop App</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Reiciendis sint eligendi </p>
+                            <button class="open-modal">SEE DETAILS</button>
+                        </div>
+                    </div> -->
+
+
+
+                </div>
+                <!-- <div style="margin-top: 3rem;" class="btn">
+                    <button>SEE MORE</button>
+                </div> -->
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <div class="contact section-primary">
+                <h1 class="primary-heading">Contact</h1>
+                <form action="">
+                    <div class="input-field">
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Write you name here...">
+                    </div>
+                    <div class="input-field">
+                        <label for="email">Your Email</label>
+                        <input type="text" placeholder="Write you email here...">
+                    </div>
+                    <div class="input-field">
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Any message for me?"></textarea>
+                    </div>
+                </form>
+                <div class="btn">
+                    <button>SEND</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p style="font-size: 1.2rem;">All information is provided by the user. <a href="https://giantsmeet.com" target="_blank">GiantsMeet</a> is not responsible for any misleading or wrong information</p>
+        </div>
+
+    </footer>
+
+    <div class="watermark" onclick='window.location="https://giantsmeet.com/"'>
+        <img src="https://giantsmeet.s3.ap-south-1.amazonaws.com/1630708891064403b5a46cebf4d9af58cd3c2613150a1.png">
+    </div>
+
+    <script>
+        const navSlide=()=>{const e=document.querySelector(".burger"),t=document.querySelector(".main-nav-list"),a=document.querySelectorAll("main-nav-link");e.addEventListener("click",()=>{t.classList.toggle("nav-active")}),a.forEach((e,t)=>{e.style.animation=`navLinkFade 0.5s ease forwards ${t/7+1}s`})};navSlide();let thumbnails=document.getElementsByClassName("thumbnail"),activeImages=document.getElementsByClassName("active");for(var i=0;i<thumbnails.length;i++)thumbnails[i].addEventListener("click",function(){activeImages.length>0&&activeImages[0].classList.remove("active"),this.classList.add("active"),document.getElementById("featured").src=this.src});let modal=document.querySelector(".project-modal"),openModal=document.querySelectorAll(".open-modal"),closeModal=document.querySelector(".close-modal");for(i=0;i<openModal.length;i++)openModal[i].addEventListener("click",()=>{modal.classList.toggle("hidden")});closeModal.addEventListener("click",()=>{modal.classList.toggle("hidden")});const sections=document.querySelectorAll("section"),navLi=document.querySelectorAll(".main-nav-link");window.addEventListener("scroll",()=>{let e="";sections.forEach(t=>{const a=t.offsetTop,l=t.clientHeight;pageYOffset>=a-l/3&&(e=t.getAttribute("id"))}),navLi.forEach(t=>{t.classList.remove("btn-cta"),t.classList.contains(e)&&t.classList.add("btn-cta")})});
+    </script>
+</body>
+
+</html>
