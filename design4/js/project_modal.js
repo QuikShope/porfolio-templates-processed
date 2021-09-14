@@ -1,8 +1,10 @@
 
 function selectThumbnail(project_id, thumbnail_id, least_thumbnail_id, max_thumbnail_id){
+  console.log(`${project_id}  ${thumbnail_id}  ${least_thumbnail_id}  ${max_thumbnail_id}`);
   var featured_thumbnail = document.getElementById(`featured_${project_id.toString()}`);
   var selected_thumbnail = document.getElementById(`thumbnail_${project_id.toString()}_${thumbnail_id.toString()}`);
-  for (var i = least_thumbnail_id; i <= max_thumbnail_id; i++) {
+  console.log(selected_thumbnail);
+  for (var i = least_thumbnail_id; i < max_thumbnail_id; i++) {
     var element = document.getElementById(`thumbnail_${project_id.toString()}_${i.toString()}`);
     element.classList.remove("active");
   }
